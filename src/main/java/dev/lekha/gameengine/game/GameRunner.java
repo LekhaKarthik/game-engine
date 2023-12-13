@@ -2,8 +2,8 @@ package dev.lekha.gameengine.game;
 
 public class GameRunner {
 
-    SuperContraGame game;
-    public GameRunner(SuperContraGame marioGame) {
+    GamingConsole game;
+    public GameRunner(GamingConsole marioGame) {
         this.game = marioGame;
     }
 
