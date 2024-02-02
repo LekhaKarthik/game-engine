@@ -2,6 +2,8 @@ package dev.lekha.gameengine;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Arrays;
+
 public class App02HelloWorldSpring {
 
     public static void main (String[] args) {
@@ -25,5 +27,9 @@ public class App02HelloWorldSpring {
         System.out.println(context.getBean("person2MethodCall"));
 
         System.out.println(context.getBean("person3Parameters"));
+
+        System.out.println("Bean count: " + context.getBeanDefinitionCount());
+
+        System.out.println("Beans: " + Arrays.toString(context.getBeanDefinitionNames()));
     }
 }
